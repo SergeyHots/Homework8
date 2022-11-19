@@ -1,0 +1,45 @@
+{
+        "count": 2,
+        "companyDescription": "Apple is an American corporation that manufactures computers, audio players, smartphones, software, and consumer products.",
+        "listOfData": [
+         {
+            "name": "iPhone",
+            "modelNumber": "XR",
+            "countries": ["usa", "uk" ],
+            "price": {
+                "regions": [
+                {
+                    "name": "firstRegion",
+                    "price": 800
+                },
+                {
+                    "name": "secondRegion",
+                    "price": 900
+                }
+                ]
+            },
+            "year": 2018
+        },
+         {
+            "name": "iPhone",
+            "modelNumber": "14",
+            "countries": ["usa", "uk" ],
+            "price": {
+                "regions": [
+                {
+                    "name": "thirdRegion",
+                    "price": 799
+                },
+                {
+                    "name": "fourthRegion",
+                    "price": 850
+                }
+                ]
+            },
+            "year": 2022
+        }
+         ]
+    
+}
+
+

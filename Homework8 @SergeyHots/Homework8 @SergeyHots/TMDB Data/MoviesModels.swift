@@ -1,5 +1,5 @@
 //
-//  MoviesModel.swift
+//  MoviesModels.swift
 //  Homework8 @SergeyHots
 //
 //  Created by Macbook on 20.11.2022.
