@@ -7,10 +7,10 @@
 
 import Foundation
 
-// MARK: - Movies
-struct Movies: Codable {
+// MARK: - TMDBResponse
+struct TMDBResponse: Codable {
     let page: Int
-    let results: [Result]
+    let results: [Movie]
     let totalPages, totalResults: Int
 
     enum CodingKeys: String, CodingKey {
@@ -21,7 +21,7 @@ struct Movies: Codable {
 }
 
 // MARK: - Result
-struct Result: Codable {
+struct Movie: Codable {
     let adult: Bool
     let backdropPath: String
     let id: Int
@@ -59,6 +59,7 @@ enum MediaType: String, Codable {
 }
 
 enum OriginalLanguage: String, Codable {
+    case de = "de"
     case en = "en"
-    case sv = "sv"
+    case fr = "fr"
 }
