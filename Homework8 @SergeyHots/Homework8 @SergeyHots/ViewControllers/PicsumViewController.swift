@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class PicsumViewController: UIViewController {
 
@@ -19,8 +20,20 @@ class PicsumViewController: UIViewController {
         let nib = UINib(nibName: "PicsumPhotoTableViewCell", bundle: nil)
         self.picsumPhotoTableView.register(nib, forCellReuseIdentifier: "PicsumPhotoTableViewCell")
         
-        arrayOfImages = DataManager().getListOfPersons()
-        picsumPhotoTableView.reloadData()
+        let request = AF.request("https://picsum.photos/v2/list?page=2&limit=100", method: .get)
+        
+        request.responseDecodable(of: PicsumElement.self) { response in
+            
+            do {
+                self.arrayOfImages = try response.result.get()
+                self.picsumPhotoTableView.reloadData()
+            } catch {
+                print("Error response")
+            }
+        }
+        
+//        arrayOfImages = DataManager().getListOfPersons()
+//        picsumPhotoTableView.reloadData()
     }
 
 }

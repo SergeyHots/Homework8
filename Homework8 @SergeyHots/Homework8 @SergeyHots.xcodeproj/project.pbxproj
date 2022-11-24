@@ -17,9 +17,7 @@
 		FA26AFA229299A8E0032F5B5 /* MoviesModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA26AFA129299A8E0032F5B5 /* MoviesModels.swift */; };
 		FA26AFA429299CA10032F5B5 /* RawData.json in Resources */ = {isa = PBXBuildFile; fileRef = FA26AFA329299CA10032F5B5 /* RawData.json */; };
 		FA26AFA62929A30F0032F5B5 /* GenreMovieModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA26AFA52929A30F0032F5B5 /* GenreMovieModels.swift */; };
-		FA6ED19A292FB9EF0090A73D /* DataMaanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6ED199292FB9EF0090A73D /* DataMaanger.swift */; };
 		FA6ED19C292FBA1F0090A73D /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6ED19B292FBA1F0090A73D /* UIImageViewExtension.swift */; };
-		FA6ED1A0292FC05C0090A73D /* PicsumJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = FA6ED19F292FC05C0090A73D /* PicsumJSON.json */; };
 		FA98B64E292C144A0030C626 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA98B64D292C144A0030C626 /* Main.storyboard */; };
 		FA98B650292C15A20030C626 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA98B64F292C15A20030C626 /* MoviesViewController.swift */; };
 		FA98B652292C36410030C626 /* GenreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA98B651292C36410030C626 /* GenreViewController.swift */; };
@@ -45,9 +43,7 @@
 		FA26AFA129299A8E0032F5B5 /* MoviesModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesModels.swift; sourceTree = "<group>"; };
 		FA26AFA329299CA10032F5B5 /* RawData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RawData.json; sourceTree = "<group>"; };
 		FA26AFA52929A30F0032F5B5 /* GenreMovieModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreMovieModels.swift; sourceTree = "<group>"; };
-		FA6ED199292FB9EF0090A73D /* DataMaanger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMaanger.swift; sourceTree = "<group>"; };
 		FA6ED19B292FBA1F0090A73D /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
-		FA6ED19F292FC05C0090A73D /* PicsumJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PicsumJSON.json; sourceTree = "<group>"; };
 		FA98B64D292C144A0030C626 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		FA98B64F292C15A20030C626 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		FA98B651292C36410030C626 /* GenreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreViewController.swift; sourceTree = "<group>"; };
@@ -113,12 +109,9 @@
 				FA26AF9B292999A80032F5B5 /* TMDB Data */,
 				FAF444E7292D524A00EB3FD7 /* Picsum Photo Data */,
 				FAF444EC292D54EF00EB3FD7 /* Custom Cell */,
+				FAFF0EEB292FE33A00DD27F2 /* ViewControllers */,
 				FA26AF872929995D0032F5B5 /* AppDelegate.swift */,
 				FA26AF892929995D0032F5B5 /* SceneDelegate.swift */,
-				FA26AF8B2929995D0032F5B5 /* ViewController.swift */,
-				FA98B64F292C15A20030C626 /* MoviesViewController.swift */,
-				FA98B651292C36410030C626 /* GenreViewController.swift */,
-				FAF444EA292D52E400EB3FD7 /* PicsumViewController.swift */,
 				FA98B64D292C144A0030C626 /* Main.storyboard */,
 				FA26AF90292999600032F5B5 /* Assets.xcassets */,
 				FA26AF92292999600032F5B5 /* LaunchScreen.storyboard */,
@@ -148,9 +141,7 @@
 		FAF444E7292D524A00EB3FD7 /* Picsum Photo Data */ = {
 			isa = PBXGroup;
 			children = (
-				FA6ED19F292FC05C0090A73D /* PicsumJSON.json */,
 				FAF444E8292D529900EB3FD7 /* PicsumModels.swift */,
-				FA6ED199292FB9EF0090A73D /* DataMaanger.swift */,
 				FA6ED19B292FBA1F0090A73D /* UIImageViewExtension.swift */,
 			);
 			path = "Picsum Photo Data";
@@ -163,6 +154,17 @@
 				FAF444EE292D559900EB3FD7 /* PicsumPhotoTableViewCell.xib */,
 			);
 			path = "Custom Cell";
+			sourceTree = "<group>";
+		};
+		FAFF0EEB292FE33A00DD27F2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA26AF8B2929995D0032F5B5 /* ViewController.swift */,
+				FA98B64F292C15A20030C626 /* MoviesViewController.swift */,
+				FA98B651292C36410030C626 /* GenreViewController.swift */,
+				FAF444EA292D52E400EB3FD7 /* PicsumViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,7 +229,6 @@
 			files = (
 				FAFE59DF292BF12700953D62 /* Podfile in Resources */,
 				FA26AFA429299CA10032F5B5 /* RawData.json in Resources */,
-				FA6ED1A0292FC05C0090A73D /* PicsumJSON.json in Resources */,
 				FA26AF94292999600032F5B5 /* LaunchScreen.storyboard in Resources */,
 				FAF444F0292D559900EB3FD7 /* PicsumPhotoTableViewCell.xib in Resources */,
 				FA26AF91292999600032F5B5 /* Assets.xcassets in Resources */,
@@ -289,7 +290,6 @@
 				FA26AF8C2929995D0032F5B5 /* ViewController.swift in Sources */,
 				FAF444EB292D52E400EB3FD7 /* PicsumViewController.swift in Sources */,
 				FA26AF882929995D0032F5B5 /* AppDelegate.swift in Sources */,
-				FA6ED19A292FB9EF0090A73D /* DataMaanger.swift in Sources */,
 				FAF444EF292D559900EB3FD7 /* PicsumPhotoTableViewCell.swift in Sources */,
 				FA26AFA229299A8E0032F5B5 /* MoviesModels.swift in Sources */,
 				FA98B652292C36410030C626 /* GenreViewController.swift in Sources */,
