@@ -10,7 +10,7 @@ import Alamofire
 
 class GenreViewController: UIViewController {
 
-    @IBOutlet weak var tableViewGenre: UITableView!
+    @IBOutlet weak var genreTableView: UITableView!
     
     var arrayOfGenreMovies: [Genre] = []
     
@@ -23,7 +23,7 @@ class GenreViewController: UIViewController {
             
             do {
                 self.arrayOfGenreMovies = try response.result.get().genres
-                self.tableViewGenre.reloadData()
+                self.genreTableView.reloadData()
             } catch {
                 print("Error response")
             }

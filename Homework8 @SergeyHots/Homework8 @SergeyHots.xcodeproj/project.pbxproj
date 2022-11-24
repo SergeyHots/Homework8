@@ -17,9 +17,16 @@
 		FA26AFA229299A8E0032F5B5 /* MoviesModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA26AFA129299A8E0032F5B5 /* MoviesModels.swift */; };
 		FA26AFA429299CA10032F5B5 /* RawData.json in Resources */ = {isa = PBXBuildFile; fileRef = FA26AFA329299CA10032F5B5 /* RawData.json */; };
 		FA26AFA62929A30F0032F5B5 /* GenreMovieModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA26AFA52929A30F0032F5B5 /* GenreMovieModels.swift */; };
+		FA6ED19A292FB9EF0090A73D /* DataMaanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6ED199292FB9EF0090A73D /* DataMaanger.swift */; };
+		FA6ED19C292FBA1F0090A73D /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6ED19B292FBA1F0090A73D /* UIImageViewExtension.swift */; };
+		FA6ED1A0292FC05C0090A73D /* PicsumJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = FA6ED19F292FC05C0090A73D /* PicsumJSON.json */; };
 		FA98B64E292C144A0030C626 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA98B64D292C144A0030C626 /* Main.storyboard */; };
 		FA98B650292C15A20030C626 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA98B64F292C15A20030C626 /* MoviesViewController.swift */; };
 		FA98B652292C36410030C626 /* GenreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA98B651292C36410030C626 /* GenreViewController.swift */; };
+		FAF444E9292D529900EB3FD7 /* PicsumModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF444E8292D529900EB3FD7 /* PicsumModels.swift */; };
+		FAF444EB292D52E400EB3FD7 /* PicsumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF444EA292D52E400EB3FD7 /* PicsumViewController.swift */; };
+		FAF444EF292D559900EB3FD7 /* PicsumPhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF444ED292D559900EB3FD7 /* PicsumPhotoTableViewCell.swift */; };
+		FAF444F0292D559900EB3FD7 /* PicsumPhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF444EE292D559900EB3FD7 /* PicsumPhotoTableViewCell.xib */; };
 		FAFE59DF292BF12700953D62 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = FAFE59DE292BF12700953D62 /* Podfile */; };
 /* End PBXBuildFile section */
 
@@ -38,9 +45,16 @@
 		FA26AFA129299A8E0032F5B5 /* MoviesModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesModels.swift; sourceTree = "<group>"; };
 		FA26AFA329299CA10032F5B5 /* RawData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RawData.json; sourceTree = "<group>"; };
 		FA26AFA52929A30F0032F5B5 /* GenreMovieModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreMovieModels.swift; sourceTree = "<group>"; };
+		FA6ED199292FB9EF0090A73D /* DataMaanger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMaanger.swift; sourceTree = "<group>"; };
+		FA6ED19B292FBA1F0090A73D /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		FA6ED19F292FC05C0090A73D /* PicsumJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PicsumJSON.json; sourceTree = "<group>"; };
 		FA98B64D292C144A0030C626 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		FA98B64F292C15A20030C626 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		FA98B651292C36410030C626 /* GenreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreViewController.swift; sourceTree = "<group>"; };
+		FAF444E8292D529900EB3FD7 /* PicsumModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumModels.swift; sourceTree = "<group>"; };
+		FAF444EA292D52E400EB3FD7 /* PicsumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumViewController.swift; sourceTree = "<group>"; };
+		FAF444ED292D559900EB3FD7 /* PicsumPhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumPhotoTableViewCell.swift; sourceTree = "<group>"; };
+		FAF444EE292D559900EB3FD7 /* PicsumPhotoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PicsumPhotoTableViewCell.xib; sourceTree = "<group>"; };
 		FAFE59DE292BF12700953D62 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
@@ -97,15 +111,18 @@
 				FAFE59DE292BF12700953D62 /* Podfile */,
 				FA26AF9C292999B20032F5B5 /* Data */,
 				FA26AF9B292999A80032F5B5 /* TMDB Data */,
+				FAF444E7292D524A00EB3FD7 /* Picsum Photo Data */,
+				FAF444EC292D54EF00EB3FD7 /* Custom Cell */,
 				FA26AF872929995D0032F5B5 /* AppDelegate.swift */,
 				FA26AF892929995D0032F5B5 /* SceneDelegate.swift */,
 				FA26AF8B2929995D0032F5B5 /* ViewController.swift */,
+				FA98B64F292C15A20030C626 /* MoviesViewController.swift */,
+				FA98B651292C36410030C626 /* GenreViewController.swift */,
+				FAF444EA292D52E400EB3FD7 /* PicsumViewController.swift */,
 				FA98B64D292C144A0030C626 /* Main.storyboard */,
 				FA26AF90292999600032F5B5 /* Assets.xcassets */,
 				FA26AF92292999600032F5B5 /* LaunchScreen.storyboard */,
 				FA26AF95292999600032F5B5 /* Info.plist */,
-				FA98B64F292C15A20030C626 /* MoviesViewController.swift */,
-				FA98B651292C36410030C626 /* GenreViewController.swift */,
 			);
 			path = "Homework8 @SergeyHots";
 			sourceTree = "<group>";
@@ -126,6 +143,26 @@
 				FA26AFA329299CA10032F5B5 /* RawData.json */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		FAF444E7292D524A00EB3FD7 /* Picsum Photo Data */ = {
+			isa = PBXGroup;
+			children = (
+				FA6ED19F292FC05C0090A73D /* PicsumJSON.json */,
+				FAF444E8292D529900EB3FD7 /* PicsumModels.swift */,
+				FA6ED199292FB9EF0090A73D /* DataMaanger.swift */,
+				FA6ED19B292FBA1F0090A73D /* UIImageViewExtension.swift */,
+			);
+			path = "Picsum Photo Data";
+			sourceTree = "<group>";
+		};
+		FAF444EC292D54EF00EB3FD7 /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FAF444ED292D559900EB3FD7 /* PicsumPhotoTableViewCell.swift */,
+				FAF444EE292D559900EB3FD7 /* PicsumPhotoTableViewCell.xib */,
+			);
+			path = "Custom Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,7 +227,9 @@
 			files = (
 				FAFE59DF292BF12700953D62 /* Podfile in Resources */,
 				FA26AFA429299CA10032F5B5 /* RawData.json in Resources */,
+				FA6ED1A0292FC05C0090A73D /* PicsumJSON.json in Resources */,
 				FA26AF94292999600032F5B5 /* LaunchScreen.storyboard in Resources */,
+				FAF444F0292D559900EB3FD7 /* PicsumPhotoTableViewCell.xib in Resources */,
 				FA26AF91292999600032F5B5 /* Assets.xcassets in Resources */,
 				FA98B64E292C144A0030C626 /* Main.storyboard in Resources */,
 			);
@@ -245,13 +284,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF444E9292D529900EB3FD7 /* PicsumModels.swift in Sources */,
 				FA26AFA62929A30F0032F5B5 /* GenreMovieModels.swift in Sources */,
 				FA26AF8C2929995D0032F5B5 /* ViewController.swift in Sources */,
+				FAF444EB292D52E400EB3FD7 /* PicsumViewController.swift in Sources */,
 				FA26AF882929995D0032F5B5 /* AppDelegate.swift in Sources */,
+				FA6ED19A292FB9EF0090A73D /* DataMaanger.swift in Sources */,
+				FAF444EF292D559900EB3FD7 /* PicsumPhotoTableViewCell.swift in Sources */,
 				FA26AFA229299A8E0032F5B5 /* MoviesModels.swift in Sources */,
 				FA98B652292C36410030C626 /* GenreViewController.swift in Sources */,
 				FA26AF8A2929995D0032F5B5 /* SceneDelegate.swift in Sources */,
 				FA98B650292C15A20030C626 /* MoviesViewController.swift in Sources */,
+				FA6ED19C292FBA1F0090A73D /* UIImageViewExtension.swift in Sources */,
 				FA26AFA029299A4E0032F5B5 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

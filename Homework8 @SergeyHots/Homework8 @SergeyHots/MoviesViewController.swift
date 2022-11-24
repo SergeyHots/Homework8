@@ -10,7 +10,7 @@ import Alamofire
 
 class MoviesViewController: UIViewController {
 
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var moviesTableView: UITableView!
     
     var arrayOfMovies: [Movie] = []
     
@@ -23,23 +23,11 @@ class MoviesViewController: UIViewController {
             
             do {
                 self.arrayOfMovies = try response.result.get().results
-                self.tableView.reloadData()
+                self.moviesTableView.reloadData()
             } catch {
                 print("Error response")
             }
         }
-        
-//MARK: - request.responseJSON
-//        request.responseJSON { recievedData in
-//            let decoder = JSONDecoder()
-//            guard let responseData = recievedData.data else { return }
-//
-//            do {
-//                let data = try? decoder.decode(TMDBResponse.self, from: responseData)
-//            } catch {
-//                print("Error data")
-//            }
-//        }
     }
 }
 
